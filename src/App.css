@@ -1,0 +1,133 @@
+.doraemon-background {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.doraemon-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://i.imgur.com/8ZQZQZQ.png');
+  background-size: 200px;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Doraemon-themed card styles */
+.doraemon-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.doraemon-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Doraemon-themed button styles */
+.doraemon-button {
+  background: linear-gradient(45deg, #1E90FF 30%, #4DA6FF 90%);
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.doraemon-button:hover {
+  background: linear-gradient(45deg, #4DA6FF 30%, #1E90FF 90%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(30, 144, 255, 0.4);
+}
+
+/* Doraemon-themed input styles */
+.doraemon-input {
+  border: 2px solid #1E90FF;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.doraemon-input:focus {
+  outline: none;
+  border-color: #4DA6FF;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.3);
+}
+
+/* Doraemon-themed quiz styles */
+.quiz-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 16px rgba(30, 144, 255, 0.2);
+}
+
+.quiz-question {
+  font-size: 24px;
+  color: #1E90FF;
+  margin-bottom: 20px;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.quiz-option {
+  background: #F0F8FF;
+  border: 2px solid #1E90FF;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-option:hover {
+  background: #E6F3FF;
+  transform: translateY(-2px);
+}
+
+.quiz-option.correct {
+  background: #90EE90;
+  border-color: #32CD32;
+}
+
+.quiz-option.incorrect {
+  background: #FFB6C1;
+  border-color: #FF6B6B;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+main {
+  padding: 20px;
+} 
